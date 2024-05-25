@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4960DD52DF33F8C8324D44E9 /* Pods_Millie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2E574FD8B9C08EE88CE24A8 /* Pods_Millie.framework */; };
+		CE8241012BFE8B6C00F71D01 /* ServerArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8241002BFE8B6C00F71D01 /* ServerArticle.swift */; };
+		CE8241042C00BDE800F71D01 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8241032C00BDE800F71D01 /* CoreDataManager.swift */; };
+		CE8241072C00BEAC00F71D01 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8241062C00BEAC00F71D01 /* WebViewController.m */; };
+		CE9B845E2C00F79900C3B349 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9B845D2C00F79900C3B349 /* ArticleCell.xib */; };
+		CE9B84602C01D24000C3B349 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B845F2C01D24000C3B349 /* CustomLayout.swift */; };
+		CE9B84622C01E82700C3B349 /* LocalArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B84612C01E82700C3B349 /* LocalArticle.swift */; };
+		CE9B84652C02004300C3B349 /* LandscapeArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9B84642C02004300C3B349 /* LandscapeArticleCell.xib */; };
+		CE9B84672C02005000C3B349 /* LandscapeArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B84662C02005000C3B349 /* LandscapeArticleCell.swift */; };
+		CEA7E40A2BFE62CF006CC2AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7E4092BFE62CF006CC2AE /* AppDelegate.swift */; };
+		CEA7E40C2BFE62CF006CC2AE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7E40B2BFE62CF006CC2AE /* SceneDelegate.swift */; };
+		CEA7E4112BFE62CF006CC2AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA7E40F2BFE62CF006CC2AE /* Main.storyboard */; };
+		CEA7E4142BFE62CF006CC2AE /* Millie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CEA7E4122BFE62CF006CC2AE /* Millie.xcdatamodeld */; };
+		CEA7E4162BFE62D6006CC2AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEA7E4152BFE62D6006CC2AE /* Assets.xcassets */; };
+		CEA7E4192BFE62D6006CC2AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEA7E4172BFE62D6006CC2AE /* LaunchScreen.storyboard */; };
+		CEA7E4272BFE6694006CC2AE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7E4262BFE6694006CC2AE /* NetworkManager.swift */; };
+		CEA7E42D2BFE6781006CC2AE /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7E42C2BFE6781006CC2AE /* NewsViewModel.swift */; };
+		CEA7E4302BFE67C1006CC2AE /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7E42F2BFE67C1006CC2AE /* NewsViewController.swift */; };
+		CEA7E4322BFE67F8006CC2AE /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA7E4312BFE67F8006CC2AE /* ArticleCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		453BB9FE0C07466BB9505D4A /* Pods-Millie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Millie.debug.xcconfig"; path = "Target Support Files/Pods-Millie/Pods-Millie.debug.xcconfig"; sourceTree = "<group>"; };
+		CE8241002BFE8B6C00F71D01 /* ServerArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerArticle.swift; sourceTree = "<group>"; };
+		CE8241032C00BDE800F71D01 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CE8241052C00BE8300F71D01 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		CE8241062C00BEAC00F71D01 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		CE9B845D2C00F79900C3B349 /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
+		CE9B845F2C01D24000C3B349 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
+		CE9B84612C01E82700C3B349 /* LocalArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalArticle.swift; sourceTree = "<group>"; };
+		CE9B84642C02004300C3B349 /* LandscapeArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandscapeArticleCell.xib; sourceTree = "<group>"; };
+		CE9B84662C02005000C3B349 /* LandscapeArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeArticleCell.swift; sourceTree = "<group>"; };
+		CEA7E4062BFE62CF006CC2AE /* Millie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Millie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEA7E4092BFE62CF006CC2AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CEA7E40B2BFE62CF006CC2AE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CEA7E4102BFE62CF006CC2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CEA7E4132BFE62CF006CC2AE /* Millie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Millie.xcdatamodel; sourceTree = "<group>"; };
+		CEA7E4152BFE62D6006CC2AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CEA7E4182BFE62D6006CC2AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CEA7E41A2BFE62D6006CC2AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CEA7E4212BFE6397006CC2AE /* Millie-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Millie-Bridging-Header.h"; sourceTree = "<group>"; };
+		CEA7E4262BFE6694006CC2AE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		CEA7E42C2BFE6781006CC2AE /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		CEA7E42F2BFE67C1006CC2AE /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		CEA7E4312BFE67F8006CC2AE /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
+		DB4FB6E2F2467EE2A127CD63 /* Pods-Millie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Millie.release.xcconfig"; path = "Target Support Files/Pods-Millie/Pods-Millie.release.xcconfig"; sourceTree = "<group>"; };
+		E2E574FD8B9C08EE88CE24A8 /* Pods_Millie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Millie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CEA7E4032BFE62CF006CC2AE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4960DD52DF33F8C8324D44E9 /* Pods_Millie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C64854396D79A1AF17FF5FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2E574FD8B9C08EE88CE24A8 /* Pods_Millie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE8241022C00BDC700F71D01 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CE8241032C00BDE800F71D01 /* CoreDataManager.swift */,
+				CEA7E4122BFE62CF006CC2AE /* Millie.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CE9B84632C01FED700C3B349 /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B845D2C00F79900C3B349 /* ArticleCell.xib */,
+				CEA7E4312BFE67F8006CC2AE /* ArticleCell.swift */,
+				CE9B84642C02004300C3B349 /* LandscapeArticleCell.xib */,
+				CE9B84662C02005000C3B349 /* LandscapeArticleCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		CEA7E3FD2BFE62CF006CC2AE = {
+			isa = PBXGroup;
+			children = (
+				CEA7E4082BFE62CF006CC2AE /* Millie */,
+				CEA7E4072BFE62CF006CC2AE /* Products */,
+				D7B7850D536BB7BCED14598D /* Pods */,
+				1C64854396D79A1AF17FF5FB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CEA7E4072BFE62CF006CC2AE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7E4062BFE62CF006CC2AE /* Millie.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CEA7E4082BFE62CF006CC2AE /* Millie */ = {
+			isa = PBXGroup;
+			children = (
+				CE8241022C00BDC700F71D01 /* CoreData */,
+				CEA7E42E2BFE679E006CC2AE /* Views */,
+				CEA7E42B2BFE6764006CC2AE /* ViewModels */,
+				CEA7E4252BFE659A006CC2AE /* Network */,
+				CEA7E4202BFE636D006CC2AE /* Models */,
+				CEA7E4092BFE62CF006CC2AE /* AppDelegate.swift */,
+				CEA7E40B2BFE62CF006CC2AE /* SceneDelegate.swift */,
+				CEA7E4212BFE6397006CC2AE /* Millie-Bridging-Header.h */,
+				CEA7E4152BFE62D6006CC2AE /* Assets.xcassets */,
+				CEA7E4172BFE62D6006CC2AE /* LaunchScreen.storyboard */,
+				CEA7E41A2BFE62D6006CC2AE /* Info.plist */,
+			);
+			path = Millie;
+			sourceTree = "<group>";
+		};
+		CEA7E4202BFE636D006CC2AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE8241002BFE8B6C00F71D01 /* ServerArticle.swift */,
+				CE9B84612C01E82700C3B349 /* LocalArticle.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CEA7E4252BFE659A006CC2AE /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7E4262BFE6694006CC2AE /* NetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		CEA7E42B2BFE6764006CC2AE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CEA7E42C2BFE6781006CC2AE /* NewsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CEA7E42E2BFE679E006CC2AE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE9B84632C01FED700C3B349 /* cell */,
+				CEA7E40F2BFE62CF006CC2AE /* Main.storyboard */,
+				CEA7E42F2BFE67C1006CC2AE /* NewsViewController.swift */,
+				CE8241052C00BE8300F71D01 /* WebViewController.h */,
+				CE8241062C00BEAC00F71D01 /* WebViewController.m */,
+				CE9B845F2C01D24000C3B349 /* CustomLayout.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D7B7850D536BB7BCED14598D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				453BB9FE0C07466BB9505D4A /* Pods-Millie.debug.xcconfig */,
+				DB4FB6E2F2467EE2A127CD63 /* Pods-Millie.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CEA7E4052BFE62CF006CC2AE /* Millie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CEA7E41D2BFE62D6006CC2AE /* Build configuration list for PBXNativeTarget "Millie" */;
+			buildPhases = (
+				BF63B127BCFF23C43C8543B1 /* [CP] Check Pods Manifest.lock */,
+				CEA7E4022BFE62CF006CC2AE /* Sources */,
+				CEA7E4032BFE62CF006CC2AE /* Frameworks */,
+				CEA7E4042BFE62CF006CC2AE /* Resources */,
+				4A8550957D952B3C492EEE1E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Millie;
+			productName = Millie;
+			productReference = CEA7E4062BFE62CF006CC2AE /* Millie.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CEA7E3FE2BFE62CF006CC2AE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					CEA7E4052BFE62CF006CC2AE = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = CEA7E4012BFE62CF006CC2AE /* Build configuration list for PBXProject "Millie" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CEA7E3FD2BFE62CF006CC2AE;
+			productRefGroup = CEA7E4072BFE62CF006CC2AE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CEA7E4052BFE62CF006CC2AE /* Millie */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CEA7E4042BFE62CF006CC2AE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE9B845E2C00F79900C3B349 /* ArticleCell.xib in Resources */,
+				CEA7E4192BFE62D6006CC2AE /* LaunchScreen.storyboard in Resources */,
+				CE9B84652C02004300C3B349 /* LandscapeArticleCell.xib in Resources */,
+				CEA7E4162BFE62D6006CC2AE /* Assets.xcassets in Resources */,
+				CEA7E4112BFE62CF006CC2AE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A8550957D952B3C492EEE1E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Millie/Pods-Millie-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Millie/Pods-Millie-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Millie/Pods-Millie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BF63B127BCFF23C43C8543B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Millie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CEA7E4022BFE62CF006CC2AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CEA7E4272BFE6694006CC2AE /* NetworkManager.swift in Sources */,
+				CE9B84622C01E82700C3B349 /* LocalArticle.swift in Sources */,
+				CEA7E40A2BFE62CF006CC2AE /* AppDelegate.swift in Sources */,
+				CEA7E40C2BFE62CF006CC2AE /* SceneDelegate.swift in Sources */,
+				CE9B84672C02005000C3B349 /* LandscapeArticleCell.swift in Sources */,
+				CE8241072C00BEAC00F71D01 /* WebViewController.m in Sources */,
+				CE8241042C00BDE800F71D01 /* CoreDataManager.swift in Sources */,
+				CE9B84602C01D24000C3B349 /* CustomLayout.swift in Sources */,
+				CEA7E4302BFE67C1006CC2AE /* NewsViewController.swift in Sources */,
+				CE8241012BFE8B6C00F71D01 /* ServerArticle.swift in Sources */,
+				CEA7E4142BFE62CF006CC2AE /* Millie.xcdatamodeld in Sources */,
+				CEA7E4322BFE67F8006CC2AE /* ArticleCell.swift in Sources */,
+				CEA7E42D2BFE6781006CC2AE /* NewsViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CEA7E40F2BFE62CF006CC2AE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA7E4102BFE62CF006CC2AE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CEA7E4172BFE62D6006CC2AE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CEA7E4182BFE62D6006CC2AE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CEA7E41B2BFE62D6006CC2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CEA7E41C2BFE62D6006CC2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CEA7E41E2BFE62D6006CC2AE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 453BB9FE0C07466BB9505D4A /* Pods-Millie.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YWA76ZMP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Millie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.jg.Millie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Millie/Millie-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CEA7E41F2BFE62D6006CC2AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB4FB6E2F2467EE2A127CD63 /* Pods-Millie.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6YWA76ZMP3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Millie/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = kr.jg.Millie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Millie/Millie-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CEA7E4012BFE62CF006CC2AE /* Build configuration list for PBXProject "Millie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA7E41B2BFE62D6006CC2AE /* Debug */,
+				CEA7E41C2BFE62D6006CC2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CEA7E41D2BFE62D6006CC2AE /* Build configuration list for PBXNativeTarget "Millie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEA7E41E2BFE62D6006CC2AE /* Debug */,
+				CEA7E41F2BFE62D6006CC2AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CEA7E4122BFE62CF006CC2AE /* Millie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CEA7E4132BFE62CF006CC2AE /* Millie.xcdatamodel */,
+			);
+			currentVersion = CEA7E4132BFE62CF006CC2AE /* Millie.xcdatamodel */;
+			path = Millie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = CEA7E3FE2BFE62CF006CC2AE /* Project object */;
+}

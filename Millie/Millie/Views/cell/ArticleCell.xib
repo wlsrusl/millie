@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ArticleCell" id="Hup-ab-g9t" customClass="ArticleCell" customModule="Millie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="Hzn-b2-uaw">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QpY-iH-zCU">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="84"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0E-EN-qBh">
+                        <rect key="frame" x="0.0" y="85" width="300" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Article" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Bl-FT-8IU">
+                        <rect key="frame" x="0.0" y="100.5" width="300" height="19.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QpY-iH-zCU" firstAttribute="leading" secondItem="Hzn-b2-uaw" secondAttribute="leading" id="2Az-uh-kou"/>
+                    <constraint firstItem="v0E-EN-qBh" firstAttribute="top" secondItem="QpY-iH-zCU" secondAttribute="bottom" constant="1" id="5KO-vD-BP6"/>
+                    <constraint firstItem="7Bl-FT-8IU" firstAttribute="leading" secondItem="Hzn-b2-uaw" secondAttribute="leading" id="7kf-jY-2S5"/>
+                    <constraint firstItem="v0E-EN-qBh" firstAttribute="leading" secondItem="Hzn-b2-uaw" secondAttribute="leading" id="8Tb-pp-11Y"/>
+                    <constraint firstAttribute="trailing" secondItem="v0E-EN-qBh" secondAttribute="trailing" id="Nsj-CS-XFK"/>
+                    <constraint firstItem="QpY-iH-zCU" firstAttribute="top" secondItem="Hzn-b2-uaw" secondAttribute="top" id="OPV-71-Jow"/>
+                    <constraint firstAttribute="trailing" secondItem="QpY-iH-zCU" secondAttribute="trailing" id="TDn-Vw-i4z"/>
+                    <constraint firstItem="7Bl-FT-8IU" firstAttribute="top" secondItem="v0E-EN-qBh" secondAttribute="bottom" constant="1" id="bgB-lV-56j"/>
+                    <constraint firstItem="QpY-iH-zCU" firstAttribute="height" secondItem="Hzn-b2-uaw" secondAttribute="height" multiplier="0.7" id="iqp-cf-UX9"/>
+                    <constraint firstAttribute="trailing" secondItem="7Bl-FT-8IU" secondAttribute="trailing" id="rBR-eT-xRV"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="dateLabel" destination="v0E-EN-qBh" id="EFC-pu-mGM"/>
+                <outlet property="imageView" destination="QpY-iH-zCU" id="SrK-sU-DGb"/>
+                <outlet property="titleLabel" destination="7Bl-FT-8IU" id="qC3-69-gJl"/>
+            </connections>
+            <point key="canvasLocation" x="-688" y="80"/>
+        </collectionViewCell>
+    </objects>
+</document>
