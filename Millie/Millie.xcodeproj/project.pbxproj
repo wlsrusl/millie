@@ -12,7 +12,6 @@
 		CE8241042C00BDE800F71D01 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8241032C00BDE800F71D01 /* CoreDataManager.swift */; };
 		CE8241072C00BEAC00F71D01 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8241062C00BEAC00F71D01 /* WebViewController.m */; };
 		CE9B845E2C00F79900C3B349 /* ArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9B845D2C00F79900C3B349 /* ArticleCell.xib */; };
-		CE9B84602C01D24000C3B349 /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B845F2C01D24000C3B349 /* CustomLayout.swift */; };
 		CE9B84622C01E82700C3B349 /* LocalArticle.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B84612C01E82700C3B349 /* LocalArticle.swift */; };
 		CE9B84652C02004300C3B349 /* LandscapeArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE9B84642C02004300C3B349 /* LandscapeArticleCell.xib */; };
 		CE9B84672C02005000C3B349 /* LandscapeArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9B84662C02005000C3B349 /* LandscapeArticleCell.swift */; };
@@ -35,7 +34,6 @@
 		CE8241052C00BE8300F71D01 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		CE8241062C00BEAC00F71D01 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		CE9B845D2C00F79900C3B349 /* ArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ArticleCell.xib; sourceTree = "<group>"; };
-		CE9B845F2C01D24000C3B349 /* CustomLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = "<group>"; };
 		CE9B84612C01E82700C3B349 /* LocalArticle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalArticle.swift; sourceTree = "<group>"; };
 		CE9B84642C02004300C3B349 /* LandscapeArticleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LandscapeArticleCell.xib; sourceTree = "<group>"; };
 		CE9B84662C02005000C3B349 /* LandscapeArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandscapeArticleCell.swift; sourceTree = "<group>"; };
@@ -165,7 +163,6 @@
 				CEA7E42F2BFE67C1006CC2AE /* NewsViewController.swift */,
 				CE8241052C00BE8300F71D01 /* WebViewController.h */,
 				CE8241062C00BEAC00F71D01 /* WebViewController.m */,
-				CE9B845F2C01D24000C3B349 /* CustomLayout.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -304,7 +301,6 @@
 				CE9B84672C02005000C3B349 /* LandscapeArticleCell.swift in Sources */,
 				CE8241072C00BEAC00F71D01 /* WebViewController.m in Sources */,
 				CE8241042C00BDE800F71D01 /* CoreDataManager.swift in Sources */,
-				CE9B84602C01D24000C3B349 /* CustomLayout.swift in Sources */,
 				CEA7E4302BFE67C1006CC2AE /* NewsViewController.swift in Sources */,
 				CE8241012BFE8B6C00F71D01 /* ServerArticle.swift in Sources */,
 				CEA7E4142BFE62CF006CC2AE /* Millie.xcdatamodeld in Sources */,
